@@ -1,0 +1,47 @@
+body {
+    font-family: serif, sans-serif;
+    font-size: 14px;
+    background-color: whitesmoke;
+    padding: 0.4rem;
+    margin: 0rem;
+}
+
+header {
+    background-color: lightsteelblue;
+    border-bottom: solid rgb(47, 47, 57);
+    padding: 0.2rem;
+}
+
+nav {
+    border: .1rem solid black;
+    margin: .5rem 1rem;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+main {
+    padding-top: 2rem;
+    padding-bottom: 1.2rem;
+    color: #2f2a2a;
+}
+
+aside {
+    border-style: solid;
+    background-color: lavenderblush;
+    padding: .5rem;
+    margin: .5rem;
+    box-shadow: inset 7px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+
+}
+
+footer {
+    background-color: lightsteelblue;
+    border-top-style: solid;
+    font-size: 0.8em;
+    margin: 0.3rem;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0.3rem;
+}
