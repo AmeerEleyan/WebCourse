@@ -9,17 +9,16 @@
     <link rel="stylesheet" type="text/css" href="./css/website.css" />
 </head>
 
-<body style="margin-left: 1em">
+<body>
     <header>
-        <div class="header_top">
-            <div class="logo">
-                <a href="../assignment1/index.html">
-                    <img id="website_logo" src="images/website_logo.png" alt="website logo" />
+        <div>
+            <div>
+                <a id="site_name" href="../assignment2/index.html">
+                    <img class="img-txt" id="website_logo" src="images/website_logo.png" alt="website logo" />
+                    Students Training
                 </a>
             </div>
-            <div class="site_name">Students Training</div>
         </div>
-
         <nav>
             <a class="nav_links" href="/">Main Page</a>
             |
@@ -32,58 +31,56 @@
         </nav>
     </header>
     <hr />
-
     <main>
         <div class="company_profile">
             <figure>
                 <img id="company_profile" src="./images/company-logo.png" alt="company logo" />
             </figure>
-            <h1 id="company_name">SwE CompAny</h1>
+            <h1>SwE CompAny</h1>
         </div>
-        <section id="introduction">
-            <h2>Company Information</h2>
+        <div>
             <article>
                 <h3>Introduction</h3>
                 This article describe the company
             </article>
-        </section>
-        <section id="working_fileds">
+        </div>
+        <section>
             <h3>Working Fields</h3>
             <ul>
                 <li>
-                    <h4>Frontend</h4>
+                    <h3>Frontend</h3>
                     <p>
-                        this filed focuses in Frontend development, which consist two team
+                        This filed focuses in Frontend development, which consist two team
                     </p>
                 </li>
                 <li>
-                    <h4>Backend</h4>
+                    <h3>Backend</h3>
                     <p>
-                        this filed focuses in Backend development, which consist 1 team
+                        This filed focuses in Backend development, which consist 1 team
                     </p>
                 </li>
                 <li>
-                    <h4>Mobile Development</h4>
+                    <h3>Mobile Development</h3>
                     <p>
-                        this filed focuses in Mobile development, which consist two team
+                        This filed focuses in Mobile development, which consist two team
                     </p>
                 </li>
                 <li>
-                    <h4>DevOps</h4>
+                    <h3>DevOps</h3>
                     <p>
-                        this filed focuses in DevOps development, which consist 3 team
+                        This filed focuses in DevOps development, which consist 3 team
                     </p>
                 </li>
             </ul>
         </section>
         <hr />
-        <section id="open_training_positin">
+        <section>
             <h3>Open training position</h3>
             <ol>
                 <li>
                     <details>
                         <summary>DevOps</summary>
-                        <p>more 2 years experience</p>
+                        <p>More 2 years experience</p>
                     </details>
                 </li>
                 <li>
@@ -98,12 +95,11 @@
             <h3>Company Photos</h3>
             <figure class="company_photos_figure">
                 <img class="company_photos" src="images/big-team.jpg" alt="img1" />
-                <img class="company_photos" src="images/company-business-team-working.jpg" />
-                <img class="company_photos" src="images/multiethnic-business-team.jpg" />
+                <img class="company_photos" src="images/company-business-team-working.jpg" alt="img2" />
+                <img class="company_photos" src="images/multiethnic-business-team.jpg" alt="img3" />
             </figure>
         </section>
-    </main>
-    <aside>
+        <hr>
         <section>
             <h3>Address</h3>
             <address>
@@ -113,25 +109,29 @@
                 <br />
                 Nablus/Palestine
             </address>
+            <hr>
         </section>
-        <section class="contact_info">
-            <h3>Contact Information</h3>
-            <a href="mailto: company@gamil.com">
-                <img class="contact_imgs" src="./images/gamil_logo.png" alt="Email" />
-                Email
-            </a>
-
+        <section class="company_contacts">
+            <h3>Company contacts</h3>
+            <a href="mailto:company@gamil.com"></a>
+            <p>Email</p>
+            <a href="tel:+970-2-2222222"></a>
+            <p>+970-2-2222222</p>
             <a href="https://www.linkedin.com/in/birzeituniversity/">
-                <img class="contact_imgs" src="./images/linkedin_logo.png" alt="LinkedIn Page" />
-                LinkedIn
-            </a>
-
+                <img class="img-txt" src="./images/linkedin_logo.png" alt="LinkedIn Page" /></a>
+            <p>LinkedIn</p>
             <a href="https://www.facebook.com/BirzeitUniversity">
-                <img class="contact_imgs" src="./images/facebook_logo.png" alt="Facebook Page" />
-                Facebook
-            </a>
-            <a href="tel: +970-2-2222222"><img src="images/telephone.png" alt="telephone" />+970-2-2222222</a>
+                <img class="img-txt" src="./images/facebook_logo.png" alt="LinkedIn Page" /></a>
+            <p>LinkedIn</p>
         </section>
+    </main>
+    <aside>
+        <h3>Related companies</h3>
+        <ul>
+            <li>ASAl</li>
+            <li>Foothill</li>
+            <li>Progineer</li>
+        </ul>
     </aside>
     <footer>
         <a href="./">Back</a>
@@ -141,14 +141,18 @@
                 Developed by Ameer Eleyan
             </h4>
         </section>
-        <section class="websites_contact">
-            <a href="tel: +970-2-2222222"></a>
-            <h4>+970-2-2222222</h4>
-        </section>
-        <section class="websites_contact">
-            <a href="mailto: 1191076@student.birzeit.edu"></a>
-            <h3>Email</h3>
-        </section>
+        <div class="websites_contact">
+            <a href="tel:+970-2-2222222">
+                <img class="img-txt" src="./images/telephone.png" alt="tel-logo">
+                +970-2-2222222
+            </a>
+        </div>
+        <div class="websites_contact">
+            <a href="mailto:1191076@student.birzeit.edu">
+                <img class="img-txt" src="./images/gamil_logo.png" alt="email-logo">
+                Email
+            </a>
+        </div>
     </footer>
 </body>
 

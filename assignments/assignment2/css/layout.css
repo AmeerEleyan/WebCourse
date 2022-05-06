@@ -1,3 +1,25 @@
+#website_logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+#website_logo:hover {
+    transform: scale(1.15);
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#site_name {
+    color: rgb(47, 47, 57);
+    font-weight: bold;
+    text-decoration: none;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
 body {
     font-family: serif, sans-serif;
     font-size: 14px;
@@ -19,9 +41,21 @@ nav {
     text-align: center;
 }
 
+.nav_links:link,
+.nav_links:visited {
+    color: rgb(47, 47, 57);
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: .2rem .4rem;
+    text-decoration: none;
+}
+
+.nav_links:hover {
+    color: rgb(234, 128, 52);
+}
+
 main {
-    padding-top: 2rem;
-    padding-bottom: 1.2rem;
+    padding: 2rem 1.3rem 1.2rem 1rem;
     color: #2f2a2a;
 }
 
