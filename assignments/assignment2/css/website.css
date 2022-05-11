@@ -11,28 +11,29 @@ main h6 {
 main p,
 article,
 li,
-a {
+a,
+span {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
+}
+
+.student_contacts,
+.company_contacts {
+    text-decoration: underline;
+    margin-right: 5.5rem;
 }
 
 main a[href^="mailto"] {
     content: url("../images/gamil_logo.png");
     width: 2.5rem;
     height: 2.5rem;
-    vertical-align: middle;
-}
 
-main a[href^="mailto"]:hover,
-main a[href^="tel"]:hover {
-    transform: scale(1.2);
 }
 
 main a[href^="tel"] {
     content: url("../images/telephone.png");
     width: 2.5rem;
     height: 2.5rem;
-    vertical-align: middle;
 }
 
 h1 {
@@ -44,25 +45,15 @@ img {
     height: 2.5rem;
 }
 
-figure {
-    margin-inline-start: 1.5rem;
-    margin-inline-end: 1rem;
-}
 
 address {
     padding-left: 0.5rem;
 }
 
-.student_contacts a,
-.company_contacts a {
-    margin-right: 0.2rem;
-}
-
-.websites_contact a:link,
+a:link,
 a:visited,
-.student_websites a:link,
-a:visited {
-    color: rgb(1, 69, 255);
+span {
+    color: rgb(255, 0, 89);
     padding: .2rem .4rem;
 }
 
@@ -72,9 +63,10 @@ a:visited {
 
 .websites_contact a:hover,
 .student_websites a:hover,
-footer a:hover,
-a+p:hover {
-    color: rgb(255, 0, 179);
+.student_contacts a:hover,
+.company_contacts a:hover,
+footer a:hover {
+    color: rgb(196, 132, 4);
 }
 
 #student_profile {
@@ -82,35 +74,9 @@ a+p:hover {
     height: 10rem;
 }
 
-#student_profile {
-    border-radius: 50rem;
-}
-
-
 #company_profile {
     width: 14rem;
     height: 12rem;
-}
-
-#company_profile:hover,
-#student_profile:hover {
-    transform: scale(1.3);
-}
-
-.img-txt:hover {
-    transform: scale(1.2);
-}
-
-.websites_imgs,
-.img-txt {
-    vertical-align: middle;
-}
-
-a+p {
-    color: rgb(1, 69, 255);
-    text-decoration: underline;
-    display: inline-block;
-    margin-right: 6rem;
 }
 
 .company_photos {
@@ -118,25 +84,14 @@ a+p {
     height: 16rem;
 }
 
-.company_photos:hover {
-    transform: scale(1.25);
-}
-
 .company_photos_figure img {
     margin-right: 10%;
 }
 
-.student_profile,
-.company_profile {
-    text-align: center;
-}
-
-.student_profile>*,
-.company_profile>* {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 .websites_contact {
-    display: inline-block;
+    margin-right: 2rem;
+}
+
+.student_websites {
+    margin-right: 5.5rem;
 }

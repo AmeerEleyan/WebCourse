@@ -3,15 +3,6 @@
     height: 3rem;
 }
 
-#website_logo:hover {
-    transform: scale(1.15);
-}
-
-.logo {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 #site_name {
     color: rgb(47, 47, 57);
     font-weight: bold;
@@ -38,7 +29,6 @@ nav {
     border: .1rem solid black;
     margin: .5rem 1rem;
     padding: .5rem 1rem;
-    text-align: center;
 }
 
 .nav_links:link,
