@@ -9,21 +9,24 @@ main h6 {
 }
 
 main p,
-article,
-li,
-a,
-span {
+main article,
+main li,
+main a,
+main span {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
 }
 
-a:link,
-a:visited {
-    color: rgb(255, 0, 89);
+main a {
     padding: .2rem .4rem;
 }
 
-a:hover {
+main a:link,
+main a:visited {
+    color: rgb(255, 0, 89);
+}
+
+main a:hover {
     color: rgb(0, 76, 255);
 }
 
@@ -43,38 +46,39 @@ main a[href^="mailto"] {
     background-repeat: no-repeat;
 }
 
-img {
+main img {
     width: 2.5rem;
     height: 2.5rem;
 }
 
-a img {
+main a img {
     margin-right: .5em;
 }
 
-address {
+main address {
     padding-left: 0.5rem;
 }
 
-ul li ul {
+main ul ul {
     list-style-image: url('../images/website_icon.ico');
 }
 
-ul li {
+main ul {
     list-style-type: circle;
 }
 
-section>span,
-figure img {
+main section>span,
+main figure img {
     margin-right: 5.5rem;
 }
 
-div>figure,
-figure+h1 {
+main div>figure,
+main figure+h1,
+main section figure {
     text-align: center;
 }
 
-img:hover {
+main img:hover {
     transform: scale(1.2);
 }
 
@@ -85,7 +89,7 @@ img:hover {
 }
 
 #company_profile {
-    width: 14rem;
+    width: 15rem;
     height: 12rem;
 }
 

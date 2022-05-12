@@ -1,4 +1,5 @@
-#website_logo {
+header img,
+footer img {
     width: 2.5rem;
     height: 2.5rem;
 }
@@ -32,8 +33,8 @@ nav {
     padding: .5rem 1rem;
 }
 
-nav a:link,
-nav a:visited {
+header nav a:link,
+header nav a:visited {
     color: rgb(47, 47, 57);
     font-family: sans-serif;
     font-weight: bold;
@@ -41,12 +42,17 @@ nav a:visited {
     text-decoration: none;
 }
 
-nav a:hover {
+header nav a:hover {
     color: rgb(234, 128, 52);
 }
 
 header nav {
     text-align: center;
+}
+
+header img:hover,
+footer img:hover {
+    transform: scale(1.2);
 }
 
 main {
@@ -69,14 +75,23 @@ footer {
     background-color: lightsteelblue;
     border-top-style: solid;
     font-size: 0.8em;
-    margin: 0.3rem;
-    vertical-align: middle;
+    margin: 0;
     text-align: center;
-    padding: 0.3rem;
+    padding: 0.2rem 0;
 }
 
 footer span a {
     margin-right: 2rem;
+}
+
+footer a {
+    padding: .2rem .4rem;
+}
+
+footer a:link,
+footer a:visited {
+    color: rgb(255, 0, 89);
+    font-size: .8rem;
 }
 
 footer a:hover {
