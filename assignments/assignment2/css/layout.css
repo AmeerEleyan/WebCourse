@@ -1,6 +1,6 @@
 #website_logo {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 #site_name {
@@ -15,14 +15,15 @@ body {
     font-family: serif, sans-serif;
     font-size: 14px;
     background-color: whitesmoke;
-    padding: 0.4rem;
+    padding: 0rem;
     margin: 0rem;
 }
 
 header {
     background-color: lightsteelblue;
     border-bottom: solid rgb(47, 47, 57);
-    padding: 0.2rem;
+    padding: 0.1rem;
+    margin: 0;
 }
 
 nav {
@@ -31,8 +32,8 @@ nav {
     padding: .5rem 1rem;
 }
 
-.nav_links:link,
-.nav_links:visited {
+nav a:link,
+nav a:visited {
     color: rgb(47, 47, 57);
     font-family: sans-serif;
     font-weight: bold;
@@ -40,8 +41,12 @@ nav {
     text-decoration: none;
 }
 
-.nav_links:hover {
+nav a:hover {
     color: rgb(234, 128, 52);
+}
+
+header nav {
+    text-align: center;
 }
 
 main {
@@ -68,4 +73,12 @@ footer {
     vertical-align: middle;
     text-align: center;
     padding: 0.3rem;
+}
+
+footer span a {
+    margin-right: 2rem;
+}
+
+footer a:hover {
+    color: rgb(0, 76, 255);
 }

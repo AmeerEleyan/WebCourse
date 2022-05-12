@@ -17,27 +17,30 @@ span {
     font-size: 1rem;
 }
 
-.student_contacts,
-.company_contacts {
-    text-decoration: underline;
-    margin-right: 5.5rem;
+a:link,
+a:visited {
+    color: rgb(255, 0, 89);
+    padding: .2rem .4rem;
+}
+
+a:hover {
+    color: rgb(0, 76, 255);
 }
 
 main a[href^="mailto"] {
-    content: url("../images/gamil_logo.png");
-    width: 2.5rem;
-    height: 2.5rem;
-
+    background-image: url("../images/gamil_logo.png");
 }
 
 main a[href^="tel"] {
-    content: url("../images/telephone.png");
-    width: 2.5rem;
-    height: 2.5rem;
+    background-image: url("../images/telephone.png");
 }
 
-h1 {
-    font-family: 'Times New Roman', Times, serif;
+main a[href^="tel"],
+main a[href^="mailto"] {
+    background-size: 2.5rem;
+    padding-top: 20px;
+    padding-left: 48px;
+    background-repeat: no-repeat;
 }
 
 img {
@@ -45,33 +48,36 @@ img {
     height: 2.5rem;
 }
 
-
 address {
     padding-left: 0.5rem;
 }
 
-a:link,
-a:visited,
-span {
-    color: rgb(255, 0, 89);
-    padding: .2rem .4rem;
-}
-
-.internal_ul {
+ul li ul {
     list-style-image: url('../images/website_icon.ico');
 }
 
-.websites_contact a:hover,
-.student_websites a:hover,
-.student_contacts a:hover,
-.company_contacts a:hover,
-footer a:hover {
-    color: rgb(196, 132, 4);
+ul li {
+    list-style-type: circle;
+}
+
+section>span,
+figure img {
+    margin-right: 5.5rem;
+}
+
+div>figure,
+figure+h1 {
+    text-align: center;
+}
+
+img:hover {
+    transform: scale(1.2);
 }
 
 #student_profile {
     width: 10rem;
     height: 10rem;
+    border-radius: 50rem;
 }
 
 #company_profile {
@@ -82,16 +88,4 @@ footer a:hover {
 .company_photos {
     width: 18rem;
     height: 16rem;
-}
-
-.company_photos_figure img {
-    margin-right: 10%;
-}
-
-.websites_contact {
-    margin-right: 2rem;
-}
-
-.student_websites {
-    margin-right: 5.5rem;
 }
