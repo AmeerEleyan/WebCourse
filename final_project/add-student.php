@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"):
     endif;//end if student
 
     require_once 'parts/_upload_file.php';
-    if (isset($target_file)) {
+    if ($_FILES['student_img_path']['error'] == UPLOAD_ERR_OK) {
         $std_image = $target_file;
     }
 
