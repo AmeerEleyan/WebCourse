@@ -3,23 +3,19 @@ $target_file = '';
 $validExt = array("jpg", "png", "PNG");
 $validMime = array("image/jpg", "image/png", "image/jpeg");
 
-foreach ($_FILES as $fileKey => $fileArray) :
 
-    //check if uploaded file has valid extension and mimeType
-    $array = explode(".", $fileArray["name"]);
-    $extension = end($array);
-    if (in_array($fileArray["type"], $validMime) && in_array($extension, $validExt)):
+if ($_FILES['student_img_path']['error'] == UPLOAD_ERR_OK) {
 
-        // name of the uploaded file.
-        $target_file = 'images/students/' . basename($_FILES["student_img_path"]["name"]);
-        if (isset($_FILES['student_img_path'])):
+    $fileName = $_FILES['student_img_path']["name"];
+    $s = explode(".", $fileName);
+    $extension = end($s);
+    if (in_array($extension, $validExt) && in_array($_FILES['student_img_path']['type'], $validMime)) {
+        $target_file = "images/students/";
+        $target_file .= basename($fileName);
+        move_uploaded_file($_FILES['student_img_path']['tmp_name'], $target_file);
+    } else {
+        echo 'has an invalid mime type or extension';
+    }
+}
 
-            if (!move_uploaded_file($_FILES['student_img_path']['tmp_name'], $target_file)) :
-                echo "Error when uploading image";
-            endif; ?>
-        <?php endif; ?>
-    <?php else :
-        echo 'has an invalid mime type or extension'; ?>
-    <?php endif; ?>
-<?php endforeach; ?>
 
